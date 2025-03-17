@@ -65,4 +65,4 @@ else
 	}
 }
 
-if (hsp != 0) image_xscale = sign(hsp) / 0.5;
+if (hsp != 0) image_xscale = sign(hsp);
