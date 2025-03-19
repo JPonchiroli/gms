@@ -1,5 +1,5 @@
-x = oPlayer.x + 5;
-y = oPlayer.y + 12;
+x = oPlayer.x;
+y = oPlayer.y;
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 
@@ -14,7 +14,7 @@ if (mouse_check_button(mb_left)) && (firingDelay < 0)
 	with (instance_create_layer(x, y, "Bullets", oBullet))
 	{
 		speed = 25;
-		direction = other.image_angle + random_range(-3, 3);
+		direction = other.image_angle;
 		image_angle = direction;
 	}
 }
@@ -24,8 +24,7 @@ y -= lengthdir_y(recoil, image_angle);
 
 if (image_angle > 90) && (image_angle < 270)
 {
-	image_yscale = -1;	
-	x = oPlayer.x - 5;
+	image_yscale = -1;
 }
 else 
 {

@@ -36,9 +36,6 @@
     "name":"sEnemy",
     "path":"sprites/sEnemy/sEnemy.yy",
   },
-  "spriteMaskId":{
-    "name":"sEnemy",
-    "path":"sprites/sEnemy/sEnemy.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
